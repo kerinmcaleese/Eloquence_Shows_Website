@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eloquence Productions — Luxury Runway Production, NYC</title>
+
+  <meta name="description" content="Eloquence Productions is a luxury, exclusive, cinematic runway production house based in New York. We craft high-end fashion shows, creative direction, and brand activations." />
+  <link rel="canonical" href="https://eloquenceshows.com/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-row">
+    <a class="brand" href="#home" aria-label="Eloquence home"><span class="wordmark">ELOQUENCE</span></a>
+    <nav class="primary" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <div class="dropdown">
+        <button class="pill small" aria-expanded="false">Work with us</button>
+        <div class="menu" role="menu">
+          <a role="menuitem" href="#work">Designers</a>
+          <a role="menuitem" href="#work">Media</a>
+          <a role="menuitem" href="#work">Models</a>
+          <a role="menuitem" href="#work">Brand Partnerships</a>
+          <a role="menuitem" href="#work">Makeup & Hair Artists</a>
+          <a role="menuitem" href="#work">Other</a>
+        </div>
+      </div>
+      <a href="#contact">Contact</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">NEW YORK · MAY 2026</p>
+    <h1>Eloquence Productions — Luxury Runway Production</h1>
+    <p class="tagline"><em>elevate with eloquence</em></p>
+    <a class="pill cta" href="#contact">Inquire</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+    <p class="lead">Eloquence Productions is a luxury runway house dedicated to partnering with designers around the world to bring their visions to life with intention and precision. We produce more than fashion shows; we build immersive, cinematic experiences that honor the narrative behind each collection.</p>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
+    <ul class="cards">
+      <li class="card"><h3>Runway Production</h3><p>Full-service runway production integrating creative direction, casting, stage design, choreography, and technical management.</p></li>
+      <li class="card"><h3>Brand Activations</h3><p>Immersive fashion experiences crafted for visibility, press, and emotional impact.</p></li>
+      <li class="card"><h3>Creative Direction</h3><p>Tailor made to transcend your moodboard.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="container">
+    <h2>Work with Us</h2>
+    <p class="lead">Contact forms are now open. Share your details below and, if we believe you’d elevate Eloquence, we’ll be in touch.</p>
+
+    <form class="application" id="application-form">
+      <div class="field-group"><label for="app-name">Name</label><input id="app-name" name="name" type="text" required /></div>
+      <div class="field-group"><label for="app-title">Job title</label><input id="app-title" name="jobTitle" type="text" required /></div>
+      <div class="field-group"><label for="app-social">Social media link</label><input id="app-social" name="social" type="url" placeholder="https://" required /></div>
+      <div class="field-group"><label for="app-portfolio">Portfolio link</label><input id="app-portfolio" name="portfolio" type="url" placeholder="https://" required /></div>
+      <div class="field-group"><label for="app-agency">Agency (optional)</label><input id="app-agency" name="agency" type="text" /></div>
+      <div class="field-group"><label for="app-phone">Phone number</label><input id="app-phone" name="phone" type="tel" required /></div>
+      <div class="field-group"><label for="app-email">Email</label><input id="app-email" name="email" type="email" required /></div>
+      <div class="field-group"><label for="app-address">Mailing address</label><input id="app-address" name="address" type="text" required /></div>
+      <div class="field-group"><label for="app-message">Message</label><textarea id="app-message" name="message" rows="4" required></textarea></div>
+      <button class="pill" type="submit">Submit application</button>
+      <span class="tiny" id="application-message" aria-live="polite"></span>
+    </form>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Stalk our Socials</h2>
+    <div class="social">
+      <a aria-label="Instagram" href="https://www.instagram.com/eloquenceshows/" target="_blank">ig</a>
+      <a aria-label="Twitter / X" href="https://x.com/eloquenceshows?s=11" target="_blank">x</a>
+      <a aria-label="TikTok" href="https://www.tiktok.com/@eloquenceshows?_r=1&_t=ZT-91ZnAkC2Lqn" target="_blank">tt</a>
+      <a aria-label="YouTube" href="https://www.youtube.com/@EloquenceShows" target="_blank">yt</a>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" class="section">
+  <div class="container">
+    <h2>Newsletter</h2>
+    <p>Stay in the loop. Events, castings, press, shows.</p>
+    <form class="newsletter" id="newsletter-form">
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <button class="pill" type="submit">Subscribe</button>
+      <span class="tiny" id="newsletter-message" aria-live="polite"></span>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span>© Eloquence Productions · New York</span>
+    <span class="muted">Website designed & developed by Kerin McAleese</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="app-modal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="app-modal-title">
+    <button class="modal-close" type="button" aria-label="Close">×</button>
+    <h3 id="app-modal-title">elevate with eloquence | concierge@eloquenceshows.org</h3>
+    <p class="tiny">Eloquence Productions LLC</p>
+  </div>
+</div>
+
+</body>
+</html>
